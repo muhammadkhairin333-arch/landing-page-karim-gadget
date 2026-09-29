@@ -19,6 +19,7 @@
     <div class="lp-nav-links">
       <button class="lp-nav-link" onclick="scrollToId('keunggulan')">Keunggulan</button>
       <button class="lp-nav-link" onclick="scrollToId('produk')">Produk</button>
+      <button class="lp-nav-link" onclick="scrollToId('katalog')">Katalog</button>
       <button class="lp-nav-link" onclick="scrollToId('testimoni')">Testimoni</button>
       <button class="lp-nav-link" onclick="scrollToId('layanan')">Layanan</button>
       <button class="lp-nav-link" onclick="scrollToId('kontak')">Kontak</button>
@@ -40,13 +41,13 @@
       <p class="hero-desc">Dapatkan iPhone second-hand mulus 99%, sudah lulus QC 3uTools, dan siap pakai. Pengalaman flagship premium tanpa harus bayar harga baru.</p>
       <div class="hero-btns">
         <a href="#katalog" class="btn-hs">Lihat Katalog &rarr;</a>
-        <a href="https://wa.me/6288291890205" target="_blank" class="btn-wa-brand">
+        <a href="https://wa.me/6288291890205?text=Halo%20Min,%20saya%20tertarik%20dengan%20iPhone%20second-nya.%20Boleh%20tanya-tanya?" target="_blank" class="btn-wa-brand">
           <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a9.882 9.882 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
           Chat WhatsApp
         </a>
       </div>
       <div class="hero-btns" style="margin-top:10px;">
-        <a href="https://www.tiktok.com/@KarimGadgetID" target="_blank" class="btn-tiktok-brand">
+        <a href="https://tiktok.com/@karimgadgetid" target="_blank" class="btn-tiktok-brand">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/></svg> TikTok
         </a>
         <a href="https://www.instagram.com/KarimGadgetID" target="_blank" class="btn-ig-brand">
@@ -107,7 +108,7 @@
       <div class="feature-card reveal reveal-delay-3">
         <div class="feature-icon">&#128249;</div>
         <div class="feature-title">Transparan di TikTok</div>
-        <p class="feature-desc">Semua unit kami dokumentasikan secara detail di TikTok <a href="https://www.tiktok.com/@KarimGadgetID" target="_blank" style="color:#1295ae;font-weight:700;text-decoration:none;">@KarimGadgetID</a> sebelum dijual.</p>
+        <p class="feature-desc">Semua unit kami dokumentasikan secara detail di TikTok <a href="https://tiktok.com/@karimgadgetid" target="_blank" style="color:#1295ae;font-weight:700;text-decoration:none;">@KarimGadgetID</a> sebelum dijual.</p>
       </div>
     </div>
   </div>
@@ -188,7 +189,7 @@
 </section>
 
 <!-- TESTIMONI -->
-<section class="testi-section">
+<section class="testi-section" id="testimoni">
   <div class="container">
 
     <!-- Header -->
@@ -643,27 +644,18 @@
     </div><!-- /masonry-grid -->
 
     <!-- Show More / Show Less Button -->
-    <div class="show-more-wrap">
+    <div class="show-more-wrap" style="display:flex; justify-content:center; gap: 16px; flex-wrap: wrap;">
       <button class="show-more-btn" id="showMoreBtn" onclick="toggleShowMore()">
         <span id="showMoreText">Lihat Semua Ulasan</span>
         <span class="count-badge" id="showMoreCount">+18 lagi</span>
       </button>
+      <a href="https://wa.me/6288291890205?text=Halo%20Min,%20saya%20mau%20kasih%20testimoni%20nih:%0A%0ANama:%20%0AHP%20yang%20dibeli:%20%0AIsi%20Testimoni:%20" target="_blank" class="show-more-btn" style="background:#0d7a8e; color:#fff; border-color:#0d7a8e;">
+        &#9999;&#65039; Tulis Ulasan Anda
+      </a>
     </div>
 
   </div>
 </section>
-
-<!-- Nav to other mockups -->
-<div style="text-align:center; padding: 32px 20px; background: #f7fafd; border-top: 1px solid #dce8f0;">
-  <p style="font-size: 13px; color: #8ca8be; margin-bottom: 12px;">Mockup Gallery â€” Karim Gadget</p>
-  <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
-    <a href="index.html" style="font-size:13px; color:#0d7a8e; font-weight:600; padding:6px 16px; border:1px solid #dce8f0; border-radius:20px; background:#fff;">&#8592; Semua Mockup</a>
-    <a href="1-chat-bubble.html" style="font-size:13px; color:#5a7a92; padding:6px 16px; border:1px solid #dce8f0; border-radius:20px; background:#fff;">Chat Bubble</a>
-    <a href="3-rating-review.html" style="font-size:13px; color:#5a7a92; padding:6px 16px; border:1px solid #dce8f0; border-radius:20px; background:#fff;">Rating &amp; Review</a>
-    <a href="4-carousel.html" style="font-size:13px; color:#5a7a92; padding:6px 16px; border:1px solid #dce8f0; border-radius:20px; background:#fff;">Carousel</a>
-    <a href="5-screenshot-wa.html" style="font-size:13px; color:#5a7a92; padding:6px 16px; border:1px solid #dce8f0; border-radius:20px; background:#fff;">Screenshot WA</a>
-  </div>
-</div>
 
 <script>
 (function() {
@@ -779,10 +771,7 @@
 
   // ===== INIT ON DOM READY =====
   document.addEventListener('DOMContentLoaded', function() {
-    // Restore likes from localStorage
-    restoreState();
-
-    // Hide expand btn if text not overflowing
+    // Hide expand btn if text not overflowing (MUST run before hiding cards)
     document.querySelectorAll('.m-text').forEach(el => {
       if (el.scrollHeight <= el.clientHeight + 4) {
         const expandBtn = el.nextElementSibling;
@@ -791,6 +780,9 @@
         }
       }
     });
+
+    // Restore likes from localStorage & hide extra cards
+    restoreState();
   });
 
 })();
@@ -834,7 +826,7 @@
       <p class="cta-desc">Hubungi Karim Gadget sekarang untuk mengecek ketersediaan stok terbaru, meminta foto/video detail unit, atau mengatur jadwal COD. Kepuasan Anda adalah prioritas kami.</p>
       <div class="cta-btns">
         <a href="#katalog" class="btn-outline">Lihat Katalog &rarr;</a>
-        <a href="https://wa.me/6288291890205" target="_blank" class="btn-wa-brand">
+        <a href="https://wa.me/6288291890205?text=Halo%20Min,%20saya%20tertarik%20dengan%20iPhone%20second-nya.%20Boleh%20tanya-tanya?" target="_blank" class="btn-wa-brand">
           <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a9.882 9.882 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
           Chat di WhatsApp
         </a>
@@ -851,7 +843,7 @@
         <a href="#keunggulan" class="footer-link">Keunggulan</a>
         <a href="#produk" class="footer-link">Produk</a>
         <a href="#layanan" class="footer-link">Layanan</a>
-        <a href="https://wa.me/6288291890205" target="_blank" class="footer-link" style="display:inline-flex;align-items:center;gap:6px;color:#25D366;">
+        <a href="https://wa.me/6288291890205?text=Halo%20Min,%20saya%20tertarik%20dengan%20iPhone%20second-nya.%20Boleh%20tanya-tanya?" target="_blank" class="footer-link" style="display:inline-flex;align-items:center;gap:6px;color:#25D366;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a9.882 9.882 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
           WhatsApp
         </a>
@@ -859,7 +851,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.036 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg>
           Instagram
         </a>
-        <a href="https://www.tiktok.com/@KarimGadgetID" target="_blank" class="footer-link" style="display:inline-flex;align-items:center;gap:6px;color:#000;">
+        <a href="https://tiktok.com/@karimgadgetid" target="_blank" class="footer-link" style="display:inline-flex;align-items:center;gap:6px;color:#000;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/></svg>
           TikTok
         </a>
@@ -1051,7 +1043,7 @@ window.openImageModal = function(catIndex, imgIndex) {
         </div>
         <div style="margin-top: 28px; display: flex; gap: 12px; flex-wrap: wrap;">
           <a href="#katalog" class="btn-hs" style="flex: 1; justify-content: center; font-size: 14px; padding: 14px;" onclick="closeModal(event, true)">Lihat Katalog</a>
-          <a href="https://wa.me/6288291890205" target="_blank" class="btn-wa-brand" style="flex: 1; justify-content: center; font-size: 14px; padding: 14px;">Chat WA</a>
+          <a href="https://wa.me/6288291890205?text=Halo%20Min,%20saya%20tertarik%20dengan%20iPhone%20second-nya.%20Boleh%20tanya-tanya?" target="_blank" class="btn-wa-brand" style="flex: 1; justify-content: center; font-size: 14px; padding: 14px;">Chat WA</a>
         </div>
       </div>
     </div>
@@ -1105,6 +1097,9 @@ function openModal(id) {
     li.textContent = spec;
     specsList.appendChild(li);
   });
+  const waBtn = document.querySelector('#productModal .btn-wa-brand');
+  if(waBtn) waBtn.href = 'https://wa.me/6288291890205?text=Halo%20Min,%20saya%20tertarik%20dengan%20' + encodeURIComponent(data.name) + '.%20Boleh%20tanya-tanya?';
+
   document.getElementById('productModal').classList.add('active');
   document.body.style.overflow = 'hidden';
 }
